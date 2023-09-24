@@ -1,3 +1,12 @@
+const navbarButtonElem = document.querySelector('.navbar-dropdown');
+
+navbarButtonElem.addEventListener('click', (evt) => {
+	const navbarWrapper = document.querySelector('.navbar-wrapper');
+	evt.preventDefault();
+	if(!navbarWrapper.classList.contains('active')) navbarWrapper.classList.add('active');
+	else navbarWrapper.classList.remove('active');
+});
+
 class StoreAPI {
 	constructor() {
 		this.endpoint = "https://fakestoreapi.com/";
@@ -43,7 +52,7 @@ class StoreAPI {
 						</div>
 					</div>
 				</div>`;
-				this.lastId = i;
+				this.lastId = data[i].id;
 			}
 		}
 	}

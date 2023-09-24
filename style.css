@@ -257,3 +257,37 @@ body {
 	from { transform: rotate(0); }
 	to { transform: rotate(360deg); }
 }
+
+/* Media queries */
+@media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
+	.navbar-header {
+		display: flex;
+		padding: 0 10px;
+		width: 100%;
+	}
+	.navbar-wrapper { display: none; }
+	.navbar-dropdown {
+		display: block;
+		margin-left: auto;
+	}
+	.navbar-nav, .navbar-wrapper { flex-direction: column; }
+	.navbar-item {
+		display: block;
+		text-align: center;
+	}
+	.navbar-wrapper.active { display: flex; }
+	.navbar-right { padding-top: 10px; }
+
+	.hero-text {
+		text-align: center;
+
+		> h1 { font-size: 20px; }
+		> h3 { font-size: 15px; }
+	}
+	.hero { justify-content: center; }
+
+	.product-image {
+		max-width: 70px;
+		max-height: 70px;
+	}
+}
