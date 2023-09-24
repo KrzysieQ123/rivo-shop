@@ -200,6 +200,47 @@ body {
 	justify-content: center;
 }
 
+.product-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	flex-basis: 33.33%;
+	transition: .5s ease;
+}
+
+.product-item:hover { transform: translateY(-10px); }
+
+.product-image {
+	max-width: 150px;
+	max-height: 150px;
+	width: 100%;
+	height: 100%;
+
+	> img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+
+.product-name { font-size: 17px; }
+
+.product-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.divider {
+	margin: 1px 20px;
+	width: 1px;
+	background: #000;
+	border-radius: 10px;
+	opacity: .8;
+	height: 30px;
+}
+
 .loading {
 	width: 60px;
 	height: 60px;
