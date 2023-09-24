@@ -42,6 +42,10 @@ body {
 	color: #FFF;
 }
 
+.btn-one:hover {
+	box-shadow: 5px 5px 15px var(--color-three);
+}
+
 .btn-two {
 	display: inline-block;
 	border: 2px solid var(--color-three);
@@ -107,7 +111,7 @@ body {
 .navbar-item {
 	display: inline-block;
 	list-style-type: none;
-	margin: 0 10px;
+	margin: 0 25px;
 	transition: all .3s ease;
 }
 
@@ -115,11 +119,12 @@ body {
 
 .navbar-item a {
 	text-decoration: none;
+	font-size: 25px;
 	color: var(--color-three);
 }
 
 .navbar-brand {
-	font-size: 20px;
+	font-size: 30px;
 	text-decoration: none;
 	font-family: var(--brand-font);
 	color: var(--color-three);
@@ -164,7 +169,7 @@ body {
 }
 
 .hero-text {
-	max-width: 650px;
+	max-width: 700px;
 	margin: 5px;
 	margin-bottom: 10px;
 }
