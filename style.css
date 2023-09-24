@@ -43,6 +43,14 @@ body {
 	color: #FFF;
 }
 
+.btn-two {
+	display: inline-block;
+	border: 2px solid var(--color-three);
+	color: var(--color-three);
+	margin-bottom: 10px;
+	padding: 10px 40px;
+}
+
 .btn-cart {
 	margin-right: 20px;
 	padding: 0;
@@ -60,6 +68,19 @@ body {
 .btn-login:hover {
 	background: var(--color-three);
 	color: var(--color-light);
+}
+
+.section-title {
+	text-align: center;
+	font-size: 40px;
+	color: var(--color-three);
+}
+
+.section-subtitle {
+	text-align: center;
+	font-size: 20px;
+	color: var(--color-three);
+	font-weight: normal;
 }
 
 /* Navbar */
@@ -167,4 +188,31 @@ body {
 		width: 100%;
 		height: 100%;
 	}
+}
+
+/* Offers */
+
+.wrapper { text-align: center; }
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.loading {
+	width: 60px;
+	height: 60px;
+	margin: 15px auto;
+	border: 5px solid #CCC;
+	border-left: 5px solid var(--color-three);
+	border-radius: 50%;
+	animation: loading-anim 3s linear infinite;
+}
+
+.loading.hidden { display: none; }
+
+@keyframes loading-anim {
+	from { transform: rotate(0); }
+	to { transform: rotate(360deg); }
 }
