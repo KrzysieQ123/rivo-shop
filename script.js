@@ -1,10 +1,16 @@
 const navbarButtonElem = document.querySelector('.navbar-dropdown');
+const navbarClose = document.querySelector('.navbar-close');
 
 navbarButtonElem.addEventListener('click', (evt) => {
 	const navbarWrapper = document.querySelector('.navbar-wrapper');
 	evt.preventDefault();
 	if(!navbarWrapper.classList.contains('active')) navbarWrapper.classList.add('active');
-	else navbarWrapper.classList.remove('active');
+});
+
+navbarClose.addEventListener('click', (evt) => {
+	const navbarWrapper = document.querySelector('.navbar-wrapper');
+	evt.preventDefault();
+	if(navbarWrapper.classList.contains('active')) navbarWrapper.classList.remove('active');
 });
 
 class StoreAPI {
